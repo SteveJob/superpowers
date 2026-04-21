@@ -104,6 +104,18 @@ When multiple skills could apply, use this order:
 "Let's build X" → brainstorming first, then implementation skills.
 "Fix this bug" → debugging first, then domain-specific skills.
 
+### Frontend Work Requires `frontend-design`
+
+When a task touches the frontend — UI, web components, pages, styling, layout, or files like `.tsx`, `.jsx`, `.vue`, `.svelte`, `.html`, `.css` (including Tailwind, shadcn/ui, React, Vue, Svelte, Next.js work) — `frontend-design` is the REQUIRED implementation skill.
+
+Process skills still run first. The order is:
+
+- **Brainstorming frontend work:** `brainstorming` → `writing-plans` → (during execution) `frontend-design` inside each frontend implementation task.
+- **Fixing a frontend bug:** `systematic-debugging` → `frontend-design` for the fix.
+- **Executing a plan with frontend tasks:** `executing-plans` / `subagent-driven-development` → invoke `frontend-design` for any task whose files are frontend files.
+
+This is NOT optional for frontend work. Generic AI-looking UI is a failure mode — `frontend-design` exists specifically to prevent it.
+
 ## Skill Types
 
 **Rigid** (TDD, debugging): Follow exactly. Don't adapt away discipline.
